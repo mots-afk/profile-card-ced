@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Profile Card</title>
@@ -124,22 +125,38 @@
         .instagram { background-color: #a12c74; }
         .instagram:hover { background-color: #901f5b; }
 
-        /* Mobile Responsiveness */
-        @media (max-width: 600px) {
-            .profile-card {
-                width: 90%;
-                text-align: center;
-            }
+      /* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .profile-card {
+        width: 90%; /* Use more space on smaller screens */
+        text-align: center; /* Center the text */
+    }
 
-            .profile-card img {
-                width: 120px;
-                height: 120px;
-            }
+    .profile-card img {
+        width: 120px; /* Smaller profile image */
+        height: 120px;
+    }
 
-            .contact-buttons {
-                flex-direction: column;
-            }
-        }
+    .content h2 {
+        font-size: 20px; /* Adjust font size */
+    }
+
+    .content p {
+        font-size: 12px; /* Adjust font size */
+    }
+
+    .contact-buttons {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center buttons */
+    }
+
+    .contact-button {
+        width: 100%; /* Buttons take full width on small screens */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
+}
+
+        
     </style>
 </head>
 <body>
