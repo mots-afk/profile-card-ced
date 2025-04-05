@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Professional Profile Card</title>
@@ -126,36 +125,52 @@
         .instagram:hover { background-color: #901f5b; }
 
       /* Mobile Responsiveness */
+/* Mobile Responsiveness */
 @media (max-width: 600px) {
+    body {
+        padding: 10px; /* Optional: Add padding to prevent edges from being too tight */
+    }
+
     .profile-card {
-        width: 90%; /* Use more space on smaller screens */
-        text-align: center; /* Center the text */
+        width: 100%; /* Take up 100% of the screen width */
+        max-width: none; /* Remove any max width restriction */
+        margin: 0; /* Remove margins */
+        border-radius: 10px; /* Optional: smaller border radius for a better fit */
     }
 
     .profile-card img {
-        width: 120px; /* Smaller profile image */
+        width: 120px; /* Reduce image size */
         height: 120px;
     }
 
+    .content {
+        padding: 15px; /* Optional: Add padding for better spacing */
+    }
+
     .content h2 {
-        font-size: 20px; /* Adjust font size */
+        font-size: 20px; /* Adjust font size for mobile */
     }
 
     .content p {
-        font-size: 12px; /* Adjust font size */
+        font-size: 14px; /* Adjust font size for readability */
     }
 
     .contact-buttons {
         flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center buttons */
+        align-items: center;
+        width: 100%; /* Make buttons take up full width */
     }
 
     .contact-button {
-        width: 100%; /* Buttons take full width on small screens */
-        margin-bottom: 10px; /* Add space between buttons */
+        width: 80%; /* Make buttons narrower to fit properly */
+        margin-bottom: 10px; /* Add some space between buttons */
+    }
+
+    .contact-button img {
+        width: 20px; /* Reduce icon size */
+        height: 20px;
     }
 }
-
         
     </style>
 </head>
